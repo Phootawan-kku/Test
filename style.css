@@ -1,84 +1,83 @@
 /* General Styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: #fff;
-    min-height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center;
-    overflow: hidden; /* Prevent scrolling */
-  }
-  
-  /* Game Container */
-  .game-container {
-    background: #ffffff20; /* Transparent white */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    border-radius: 15px; /* Rounded corners */
-    padding: 30px 20px;
-    width: 90%;
-    max-width: 500px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Header Styles */
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #ddd;
-  }
-  
-  /* Choices Section */
-  .choices {
-    display: flex;
-    justify-content: space-around; /* Even spacing between buttons */
-    margin-bottom: 30px;
-  }
-  
-  .choice-btn {
-    background: #ffffff20; /* Transparent button background */
-    border: 2px solid #fff; /* White border */
-    border-radius: 10px; /* Rounded button edges */
-    padding: 10px 20px;
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: all 0.3s ease; /* Smooth hover animation */
-    width: 100px; /* Fixed button width */
-  }
-  
-  .choice-btn img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
-  }
-  
-  .choice-btn:hover {
-    background: #ffffff50; /* Slightly lighter background on hover */
-    transform: translateY(-5px); /* Lift button on hover */
-  }
-  
-  /* Result Section */
-  .result h2 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  
-  .result span {
-    font-weight: bold;
-    color: #ffeb3b; /* Yellow for choices */
-  }
-  
-  #winner span {
-    color: #4caf50; /* Green for winner */
-  }
-  
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  height: 100%; /* Ensures the body spans the entire viewport */
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+  text-align: center;
+}
+
+/* Game Container */
+.game-container {
+  background: rgba(255, 255, 255, 0.2); /* Frosted glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 15px; /* Rounded corners */
+  padding: 30px 20px;
+  width: 90%;
+  max-width: 500px; /* Limits the container's width */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styles */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Choices Section */
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.choice-btn {
+  background: rgba(255, 255, 255, 0.2); /* Transparent button background */
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100px;
+  text-align: center;
+}
+
+.choice-btn img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.choice-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-5px);
+}
+
+/* Result Section */
+.result h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.result span {
+  font-weight: bold;
+  color: #ffeb3b; /* Yellow text */
+}
+
+#winner span {
+  color: #4caf50; /* Green for winner text */
+}

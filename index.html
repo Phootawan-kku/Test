@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <!-- Link to Google Font (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-  <div class="game-container">
-    <h1>Rock, Paper, Scissors</h1>
-    <p>Make your choice and challenge the computer!</p>
-    <div class="choices">
-      <button id="rock" class="choice-btn">
-        <img src="https://img.icons8.com/color/96/rock.png" alt="Rock">
-        Rock
-      </button>
-      <button id="paper" class="choice-btn">
-        <img src="https://img.icons8.com/color/96/paper.png" alt="Paper">
-        Paper
-      </button>
-      <button id="scissors" class="choice-btn">
-        <img src="https://img.icons8.com/color/96/scissors.png" alt="Scissors">
-        Scissors
-      </button>
+    <div class="container"> <!-- Main container for centering content -->
+        <h1 class="header">Typing Speed Test</h1> <!-- Header -->
+
+        <div class="quote-display" id="quoteDisplay">
+            <!-- Quote will be inserted here by JavaScript -->
+        </div>
+
+        <textarea id="quoteInput" class="textarea-input" placeholder="Start typing here..."></textarea> <!-- Text area for user input -->
+
+        <div class="avg-wpm" id="avgWpm">Average WPM: 0</div> <!-- Displaying the average WPM -->
+        <div id="statusMessage"></div> <!-- Status message for completion -->
+
+        <button id="restartBtn" class="restart-btn">Restart</button> <!-- Restart button -->
     </div>
-    <div class="result">
-      <h2 id="user-choice">Your Choice: <span>-</span></h2>
-      <h2 id="computer-choice">Computer's Choice: <span>-</span></h2>
-      <h2 id="winner">Winner: <span>-</span></h2>
-    </div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- Link to JavaScript -->
 </body>
 </html>

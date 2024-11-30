@@ -39,7 +39,7 @@ body.dark-mode #quoteDisplay {
 }
 
 body.dark-mode .textarea-input{
-    background-color: #555;
+    background-color: gray;
     color: white;
 }
 
